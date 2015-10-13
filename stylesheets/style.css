@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);
+body {
+  color: #6C5953;
+  background-color: #F0F0EF;
+  font-family: Bitter, serif;
+  font-size: 16px; }
+
+.navbar {
+  background-color: #CBC2BF; }
+
+.navbar-default .navbar-brand {
+  color: #955A47; }
+.navbar-default .navbar-brand:hover {
+  color: #EDD690; }
+.navbar-default .navbar-nav > li > a {
+  color: #955A47; }
+.navbar-default .navbar-nav > li > a:hover {
+  color: #EDD690; }
+
+a {
+  color: #955A47; }
+
+a:hover {
+  color: #EDD690;
+  text-decoration: none; }
+
+.card {
+  background-color: #CBC2BF;
+  border-radius: 10px; }
+  .card .img-rounded {
+    margin: 15px 0px; }
+
+.card > .desc {
+  margin-bottom: 15px; }
+
+.date {
+  float: right;
+  margin-top: 2px; }
+
+.post-body img {
+  max-width: 75%; }
+
+/*# sourceMappingURL=style.css.map */
