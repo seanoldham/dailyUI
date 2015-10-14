@@ -27,6 +27,7 @@ a:hover {
   text-decoration: none; }
 
 .card {
+  margin-bottom: 20px;
   background-color: #CBC2BF;
   border-radius: 10px;
   box-shadow: 0px 2px 5px 0px #ADADAD; }
