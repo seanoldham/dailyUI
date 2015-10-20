@@ -28,7 +28,7 @@
 
     <div class="container">
       
-  <div class="col-xs-12 col-md-4">
+  <div class="col-xs-12 col-md-4 card-case">
     <div class="container-fluid card">
       <div class="artwork"><a href="/2015/10/19/ui_005.html"><img class="img-responsive img-rounded" src="/images/UI_005.png" /></a></div>
       <div class="desc">
@@ -37,7 +37,7 @@
       </div>
     </div>
   </div>
-  <div class="col-xs-12 col-md-4">
+  <div class="col-xs-12 col-md-4 card-case">
     <div class="container-fluid card">
       <div class="artwork"><a href="/2015/10/16/ui_004.html"><img class="img-responsive img-rounded" src="/images/UI_004.png" /></a></div>
       <div class="desc">
@@ -46,7 +46,7 @@
       </div>
     </div>
   </div>
-  <div class="col-xs-12 col-md-4">
+  <div class="col-xs-12 col-md-4 card-case">
     <div class="container-fluid card">
       <div class="artwork"><a href="/2015/10/15/ui_003.html"><img class="img-responsive img-rounded" src="/images/UI_003.png" /></a></div>
       <div class="desc">
@@ -55,7 +55,7 @@
       </div>
     </div>
   </div>
-  <div class="col-xs-12 col-md-4">
+  <div class="col-xs-12 col-md-4 card-case">
     <div class="container-fluid card">
       <div class="artwork"><a href="/2015/10/14/ui_002.html"><img class="img-responsive img-rounded" src="/images/UI_002.png" /></a></div>
       <div class="desc">
@@ -64,7 +64,7 @@
       </div>
     </div>
   </div>
-  <div class="col-xs-12 col-md-4">
+  <div class="col-xs-12 col-md-4 card-case">
     <div class="container-fluid card">
       <div class="artwork"><a href="/2015/10/13/ui_001.html"><img class="img-responsive img-rounded" src="/images/UI_001.png" /></a></div>
       <div class="desc">
@@ -73,7 +73,7 @@
       </div>
     </div>
   </div>
-  <div class="col-xs-12 col-md-4">
+  <div class="col-xs-12 col-md-4 card-case">
     <div class="container-fluid card">
       <div class="artwork"><a href="/2015/10/12/ui_000.html"><img class="img-responsive img-rounded" src="/images/UI_000.png" /></a></div>
       <div class="desc">
@@ -87,5 +87,15 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+      var $columns = $('.card-case');
+      var height = 0;
+      $columns.each(function () {
+        if ($(this).height() > height) {
+          height = $(this).height();
+        }
+      });
+      $columns.height(height);
+    </script>
   </body>
 </html>
